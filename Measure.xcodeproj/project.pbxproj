@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C705D5D2F19E55C00417527 /* MeasureAppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 5C705D4F2F19E55900417527 /* MeasureAppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		614909141F3AE1B6009C5640 /* SCNVector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614909131F3AE1B6009C5640 /* SCNVector3.swift */; };
 		614909161F3AE775009C5640 /* ARSCNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614909151F3AE775009C5640 /* ARSCNView.swift */; };
 		61B33F721F3ADB48004055CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B33F711F3ADB48004055CE /* AppDelegate.swift */; };
@@ -21,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5C705D5B2F19E55C00417527 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61B33F661F3ADB48004055CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C705D4E2F19E55900417527;
+			remoteInfo = MeasureAppClip;
+		};
 		61B33F851F3ADB49004055CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 61B33F661F3ADB48004055CE /* Project object */;
@@ -37,7 +45,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5C705D252F18FD6100417527 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				5C705D5D2F19E55C00417527 /* MeasureAppClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5C705D4F2F19E55900417527 /* MeasureAppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeasureAppClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		614909131F3AE1B6009C5640 /* SCNVector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNVector3.swift; sourceTree = "<group>"; };
 		614909151F3AE775009C5640 /* ARSCNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSCNView.swift; sourceTree = "<group>"; };
 		61B33F6E1F3ADB48004055CE /* Measure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Measure.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +80,28 @@
 		61B33FA11F3ADC64004055CE /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5C705D602F19E55C00417527 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5C705D4E2F19E55900417527 /* MeasureAppClip */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		5C705D502F19E55900417527 /* MeasureAppClip */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (5C705D602F19E55C00417527 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = MeasureAppClip; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		5C705D4C2F19E55900417527 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		61B33F6B1F3ADB48004055CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,6 +132,7 @@
 				61B33F701F3ADB48004055CE /* Measure */,
 				61B33F871F3ADB49004055CE /* MeasureTests */,
 				61B33F921F3ADB49004055CE /* MeasureUITests */,
+				5C705D502F19E55900417527 /* MeasureAppClip */,
 				61B33F6F1F3ADB48004055CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +143,7 @@
 				61B33F6E1F3ADB48004055CE /* Measure.app */,
 				61B33F841F3ADB49004055CE /* MeasureTests.xctest */,
 				61B33F8F1F3ADB49004055CE /* MeasureUITests.xctest */,
+				5C705D4F2F19E55900417527 /* MeasureAppClip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +186,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5C705D4E2F19E55900417527 /* MeasureAppClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C705D612F19E55C00417527 /* Build configuration list for PBXNativeTarget "MeasureAppClip" */;
+			buildPhases = (
+				5C705D4B2F19E55900417527 /* Sources */,
+				5C705D4C2F19E55900417527 /* Frameworks */,
+				5C705D4D2F19E55900417527 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5C705D502F19E55900417527 /* MeasureAppClip */,
+			);
+			name = MeasureAppClip;
+			packageProductDependencies = (
+			);
+			productName = MeasureAppClip;
+			productReference = 5C705D4F2F19E55900417527 /* MeasureAppClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
 		61B33F6D1F3ADB48004055CE /* Measure */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 61B33F981F3ADB49004055CE /* Build configuration list for PBXNativeTarget "Measure" */;
@@ -147,10 +215,12 @@
 				61B33F6A1F3ADB48004055CE /* Sources */,
 				61B33F6B1F3ADB48004055CE /* Frameworks */,
 				61B33F6C1F3ADB48004055CE /* Resources */,
+				5C705D252F18FD6100417527 /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5C705D5C2F19E55C00417527 /* PBXTargetDependency */,
 			);
 			name = Measure;
 			productName = Measure;
@@ -199,10 +269,13 @@
 		61B33F661F3ADB48004055CE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = levantAJ;
 				TargetAttributes = {
+					5C705D4E2F19E55900417527 = {
+						CreatedOnToolsVersion = 26.2;
+					};
 					61B33F6D1F3ADB48004055CE = {
 						CreatedOnToolsVersion = 9.0;
 					};
@@ -232,11 +305,19 @@
 				61B33F6D1F3ADB48004055CE /* Measure */,
 				61B33F831F3ADB49004055CE /* MeasureTests */,
 				61B33F8E1F3ADB49004055CE /* MeasureUITests */,
+				5C705D4E2F19E55900417527 /* MeasureAppClip */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5C705D4D2F19E55900417527 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		61B33F6C1F3ADB48004055CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,6 +346,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5C705D4B2F19E55900417527 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		61B33F6A1F3ADB48004055CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -296,6 +384,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5C705D5C2F19E55C00417527 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C705D4E2F19E55900417527 /* MeasureAppClip */;
+			targetProxy = 5C705D5B2F19E55C00417527 /* PBXContainerItemProxy */;
+		};
 		61B33F861F3ADB49004055CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 61B33F6D1F3ADB48004055CE /* Measure */;
@@ -328,6 +421,100 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5C705D5E2F19E55C00417527 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = MeasureAppClip/MeasureAppClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K9VCWQMSBZ;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeasureAppClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Measure;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = test.case.testcase.v8.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C705D5F2F19E55C00417527 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = MeasureAppClip/MeasureAppClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K9VCWQMSBZ;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeasureAppClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Measure;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = test.case.testcase.v8.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		61B33F961F3ADB49004055CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -430,7 +617,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -441,7 +629,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K9VCWQMSBZ;
 				INFOPLIST_FILE = Measure/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.case.testcase.v8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -455,7 +646,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K9VCWQMSBZ;
 				INFOPLIST_FILE = Measure/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.case.testcase.v8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -466,11 +660,14 @@
 		61B33F9C1F3ADB49004055CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = K9VCWQMSBZ;
 				INFOPLIST_FILE = MeasureTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.case.testcase.v8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -482,11 +679,14 @@
 		61B33F9D1F3ADB49004055CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = K9VCWQMSBZ;
 				INFOPLIST_FILE = MeasureTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.case.testcase.v8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -498,10 +698,14 @@
 		61B33F9F1F3ADB49004055CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = K9VCWQMSBZ;
 				INFOPLIST_FILE = MeasureUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.case.testcase.v8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -513,10 +717,14 @@
 		61B33FA01F3ADB49004055CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = K9VCWQMSBZ;
 				INFOPLIST_FILE = MeasureUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.case.testcase.v8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -528,6 +736,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5C705D612F19E55C00417527 /* Build configuration list for PBXNativeTarget "MeasureAppClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C705D5E2F19E55C00417527 /* Debug */,
+				5C705D5F2F19E55C00417527 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		61B33F691F3ADB48004055CE /* Build configuration list for PBXProject "Measure" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
